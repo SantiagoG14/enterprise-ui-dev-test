@@ -1,4 +1,4 @@
-name: Unit Tests
+name: Build And Test
 
 on:
   push:
@@ -16,3 +16,4 @@ jobs:
         uses: actions/setup-node@v3
       - run: npm ci
       - run: npm run test:all
+      - run: npm run build
